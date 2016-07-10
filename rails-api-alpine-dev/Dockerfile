@@ -10,6 +10,7 @@ RUN apk add --no-cache --virtual tzdata
 RUN apk add --no-cache --virtual zlib
 RUN apk add --no-cache --virtual libxml2
 RUN apk add --no-cache --virtual libxslt
+RUN apk add --no-cache --virtual postgresql-dev
 
 ENV RAILS_VERSION 5.0.0
 
