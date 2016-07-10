@@ -1,15 +1,15 @@
 FROM ruby:2.3.1-alpine
 
-apk add --no-cache --virtual postgresql-client
-apk add --no-cache --virtual build-dependencies
-apk add --no-cache --virtual build-base
-apk add --no-cache --virtual ruby-dev
-apk add --no-cache --virtual openssl-dev
-apk add --no-cache --virtual libstdc++
-apk add --no-cache --virtual tzdata
-apk add --no-cache --virtual zlib
-apk add --no-cache --virtual libxml2
-apk add --no-cache --virtual libxslt
+RUN apk add --no-cache --virtual postgresql-client
+RUN apk add --no-cache --virtual build-dependencies
+RUN apk add --no-cache --virtual build-base
+RUN apk add --no-cache --virtual ruby-dev
+RUN apk add --no-cache --virtual openssl-dev
+RUN apk add --no-cache --virtual libstdc++
+RUN apk add --no-cache --virtual tzdata
+RUN apk add --no-cache --virtual zlib
+RUN apk add --no-cache --virtual libxml2
+RUN apk add --no-cache --virtual libxslt
 
 ENV RAILS_VERSION 5.0.0
 
